@@ -1,0 +1,13 @@
+function int main() 
+begin
+    int x;
+    x = 10;
+
+    if (x > 5) then
+    begin
+        x = x + 1;
+    end
+    endif
+
+    return x;
+end
