@@ -1,0 +1,10 @@
+function int main()
+begin
+    int i;
+    i = 0;
+    while (i < 10) do
+    begin
+        i = i + 1;
+    end
+    endwhile
+end

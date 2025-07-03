@@ -1,0 +1,6 @@
+function int main()
+begin
+    int x;
+    scan(x);
+    print(x);
+end

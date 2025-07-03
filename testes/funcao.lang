@@ -1,0 +1,10 @@
+function int sum(int a, int b)
+begin
+    return a + b;
+end
+
+function int main()
+begin
+    int result;
+    result = sum(10, 20);
+end

@@ -1,0 +1,4 @@
+function int main()
+begin
+    x = 10;
+end

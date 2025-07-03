@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -g -Iincludes
-TARGET = analisador
+TARGET = compilador
 
 SDIR = src
 ODIR = obj
@@ -14,7 +14,7 @@ OBJECTS = $(addprefix $(ODIR)/, $(SOURCES_C:.c=.o))
 all: $(TARGET)
 
 $(TARGET): $(OBJECTS)
-	@echo "A ligar o analisador..."
+	@echo "Ligando o analisador..."
 	$(CC) $(CFLAGS) -o $@ $^
 	@echo "Analisador construído: ./${TARGET}"
 

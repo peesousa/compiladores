@@ -2,15 +2,15 @@
 #define TOKEN_H
 
 typedef enum {
-    // inicio e fim de um bloco de codigo
+    // início e fim de bloco de código
     TOKEN_BEGIN,
     TOKEN_END,
 
-    // tipos de dados primitivos
+    // tipos de dados
     TOKEN_INT,
     TOKEN_FLOAT,
 
-    // estruturas de decisao e repeticao
+    // condicionais e laços
     TOKEN_IF,
     TOKEN_THEN,
     TOKEN_ENDIF,
@@ -20,28 +20,28 @@ typedef enum {
     TOKEN_DO,
     TOKEN_ENDWHILE,
 
-    // entrada e saida
+    // saída de dados
     TOKEN_PRINT,
     TOKEN_SCAN,
 
-    // funcoes e procedimentos
+    // funções e procedimentos.
     TOKEN_FUNCTION,
     TOKEN_PROCEDURE,
     TOKEN_RETURN,
 
-    // pontuacao
+    // símbolos de pontuação que estruturam o código.
     TOKEN_LPAREN,
     TOKEN_RPAREN,
-    TOKEN_COMMA,    
+    TOKEN_COMMA,
     TOKEN_SEMICOLON,
 
-    // operadores aritméticos
+    // operadores aritmeticos
     TOKEN_PLUS,
     TOKEN_MINUS,
     TOKEN_ASTERISK,
     TOKEN_SLASH,
 
-    // atribuicao e comparacao
+    // atribuição e comparação
     TOKEN_ASSIGN,
     TOKEN_EQ,
     TOKEN_LT,
@@ -50,14 +50,13 @@ typedef enum {
     TOKEN_GTE,
     TOKEN_NEQ,
 
-    // definicao de variavel e funcoes
+    // nomes de variáveis e funções criados
     TOKEN_IDENTIFIER,
 
-    // valores fixos
     TOKEN_INTEGER_LITERAL,
     TOKEN_FLOAT_LITERAL,
 
-    // final do arquivo
+    // fim do arquivo.
     TOKEN_EOF,
 
     // palavra desconhecida
